@@ -31,6 +31,7 @@ After the bearing analysis where faulty bearings were predicted in the [classifi
 |---------|-------------------------|
 | main.py | 1. Read DataFrame from csv file<br>2. Feature Engineering<br/>3. Write New DataFrame to csv file |
 | model.py| Clustering models implementation ([sklearn.cluster](https://scikit-learn.org/stable/modules/classes.html#module-sklearn.cluster)) |
+| feature.py | Feature engineering functions |
 | assets | Folder containing plots and visuals |
 
 
