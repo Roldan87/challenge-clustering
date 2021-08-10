@@ -138,5 +138,19 @@ For n_clusters = 2 The average silhouette_score is : 0.4788317775775801<br/>
 
 ![mean_shift_clust](assets/mean_shift.png)
 
+### Spactral Clustering Model
+
+Features:<br/> a2_x_mean and a2_x_amp_max<br/>
+For n_clusters = 2 The average silhouette_score is : 0.1940083895002846<br/>
+For n_clusters = 3 The average silhouette_score is : 0.1940083895002846<br/>
+For n_clusters = 4 The average silhouette_score is : 0.1940083895002846<br/>
+For n_clusters = 5 The average silhouette_score is : 0.1940083895002846<br/>
+For n_clusters = 6 The average silhouette_score is : 0.2620452158301752<br/>
+For n_clusters = 7 The average silhouette_score is : 0.1940083895002846
+
+![spactral_cluster_4](assets/spactral_4.png)
+![spactral_cluster_6](assets/spactral_6.png)
+
+
 
 
