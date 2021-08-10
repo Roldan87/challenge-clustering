@@ -37,6 +37,10 @@ After the bearing analysis where faulty bearings were predicted in the [classifi
 ## Visuals
 
 ### KMeans Clustering Model
+
+"Silhouette coefficients (as these values are referred to as) near +1 indicate that the sample is far away from the neighboring clusters. A value of 0 indicates that the sample is on or very close to the decision boundary between two neighboring clusters and negative values indicate that those samples might have been assigned to the wrong cluster.
+Also from the thickness of the silhouette plot the cluster size can be visualized."
+
 #### 2 Features
 
 | Features and Clusters   | Scores                                               |
@@ -112,5 +116,27 @@ After the bearing analysis where faulty bearings were predicted in the [classifi
 #### Silhouette Score Evolution
 
 ![score_evolution](assets/score_evolution.png)
+
+
+### Agglomerative Clustering Model
+
+Features:<br/> a2_x_mean and a2_y_mean<br/>
+For n_clusters = 2 The average silhouette_score is : 0.6052813580401204<br/>
+For n_clusters = 3 The average silhouette_score is : 0.5619701533559098<br/>
+For n_clusters = 4 The average silhouette_score is : 0.5198946530090034<br/>
+For n_clusters = 5 The average silhouette_score is : 0.5219365474776361<br/>
+For n_clusters = 6 The average silhouette_score is : 0.5155835523099813<br/>
+For n_clusters = 7 The average silhouette_score is : 0.4904267147704647
+
+![agglomerative_cluster_2](assets/agglo_feat_2.png)
+![agglomerative_cluster_3](assets/agglo_feat_3.png)
+
+### MeanShift Clustering Model
+
+Features:<br/> a2_x_mean and a2_z_mean<br/>
+For n_clusters = 2 The average silhouette_score is : 0.4788317775775801<br/>
+
+![mean_shift_clust](assets/mean_shift.png)
+
 
 
