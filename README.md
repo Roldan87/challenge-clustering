@@ -32,7 +32,7 @@ After the bearing analysis where faulty bearings were predicted in the [classifi
 | main.py | 1. Read DataFrame from csv file<br>2. Feature Engineering<br/>3. Write New DataFrame to csv file |
 | feature.py | Feature engineering functions |
 | model.py| Clustering models implementation ([sklearn.cluster](https://scikit-learn.org/stable/modules/classes.html#module-sklearn.cluster)) |
-| assets | Folder containing plots and visuals |
+| assets | Folder containing plots |
 
 ## Visuals
 
@@ -202,7 +202,7 @@ For n_clusters = 7 The average silhouette_score is : -0.4212891907366274
 * *KMeans*
 * Highest Silhouette Score (2 features / 2 clusters) = 0.84
 * 2nd highest Sil. Score (2 features / 2 clusters) = 0.72
-* Avg Sil. Avg Score (2 features / 2-7 clusters) = 0.57
+* Avg Sil. Score (2 features / 2-7 clusters) = 0.57
 * Best Sil. Avg Score (3-6 features / 2-7 clusters) = 0.61
 
 ##### Other Clustering models tried:
