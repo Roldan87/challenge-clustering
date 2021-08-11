@@ -35,6 +35,7 @@ After the bearing analysis where faulty bearings were predicted in the [classifi
 | model.py| Clustering models implementation ([sklearn.cluster](https://scikit-learn.org/stable/modules/classes.html#module-sklearn.cluster)) |
 | assets | Folder containing plots |
 
+## Bearing Dataframe Features
 ### Feature Extraction
 After feature engineering, this is the final set of features to fit the models.
 ##### 99 rows × 27 columns
