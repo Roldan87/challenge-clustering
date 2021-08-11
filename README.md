@@ -24,12 +24,13 @@ After the bearing analysis where faulty bearings were predicted in the [classifi
 * Matplotlib
 * Seaborn
 * Sklearn
+* Itertools
 
 ## Usage
 
 | File    | Description             |
 |---------|-------------------------|
-| main.py | 1. Read DataFrame from csv file<br>2. Feature Engineering<br/>3. Write New DataFrame to csv file |
+| main.py | 1. Read DataFrame from csv file<br>2. Feature Engineering<br/>3. Write new DataFrame to csv file |
 | feature.py | Feature engineering functions |
 | model.py| Clustering models implementation ([sklearn.cluster](https://scikit-learn.org/stable/modules/classes.html#module-sklearn.cluster)) |
 | assets | Folder containing plots |
@@ -152,7 +153,7 @@ The silhouette score differs from 2 features (red line) compared to 3/4/5 or 6 f
 
 ### Agglomerative Clustering Model: 
 #### Max Score = 0.88
-This score for n_clusters = 2 is influenced due to one outlier. For 3 to 7 clusters the score as well as the clustering is similar to the KMeans model.
+This score for n_clusters = 2 is influenced by the one outlier. For 3 to 7 clusters the score as well as the clustering is similar to the KMeans model.
 #### Features: a2_x_mean and a2_x_amp_max
 
 For n_clusters = 2 The average silhouette_score is : 0.8817317199450385<br/>
