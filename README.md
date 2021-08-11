@@ -61,8 +61,9 @@ From 3 clusters on, the score drops drastically.
 | For n_clusters = 6      | The average silhouette_score is : 0.41661611434422896 |
 | For n_clusters = 7      | The average silhouette_score is : 0.4488787240769407 |
 
-![n_clusters_2](assets/kmens_cl_2.png)
-![n_clusters_3](assets/kmens_cl_3.png)
+![n_clusters_2](assets/kmens_cl_2_silhou.png)
+![n_clusters_3](assets/kmens_cl_2.png)
+![n_clusters_2](assets/kmens_cl_3_silhou.png)
 
 #### Clustering 2 Features: (a2_x_mean and a2_x_amp_max)
 #### Max Score = 0.72
@@ -87,7 +88,7 @@ This 2 features show the 2nd highest score and best avg score as the cluster num
 
 
 #### Clustering 3 Features: 
-#### Max Score = 0.82
+#### Max Score = 0.81
 
 | Features and Clusters                 | Scores                                               |
 |---------------------------------------|------------------------------------------------------|
