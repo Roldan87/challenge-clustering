@@ -212,7 +212,9 @@ For n_clusters = 7 The average silhouette_score is : -0.4212891907366274
 * *MeanShift*                     --> max Score = 0.50
 * *Spactral Clustering*           --> max Score = 0.11
 
-
+##### Final Word:
+The objective of gruping or clustering bearings by similar kinds of faults was not an easy task; the results show that the model was not able to differentiate such groups efficiently enough for us to see obvious separation in the faulty bearings.<br/>
+After this project though, my skills regarding coding, ploting and implementation of ML algorithms have been tested; but more important, it was a useful challenge to keep ascending in the learning curve to become a data scientist.
 
 
 

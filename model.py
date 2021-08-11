@@ -12,15 +12,12 @@ from itertools import combinations
 # Read DF
 df_bear = pd.read_csv('bearing_final_data.csv', index_col=0)
 
-
 # Function to iterate through all possible combinations between 2 features
 def iter_feature(arr, r):
     return list(combinations(arr, r))
 
-
 # Get Column names in dataset as list
 arr = df_bear.columns.to_list()
-
 
 #Function for Silhouette scores and Plots
 def scores_and_plots(cluster_model, model_name, df, feat_one, feat_two):
