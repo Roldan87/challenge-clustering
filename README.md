@@ -67,6 +67,7 @@ From 3 clusters on, the score drops drastically.
 
 ![n_clusters_2](assets/kmens_cl_2_silhou.png)
 ![n_clusters_3](assets/kmens_cl_2.png)
+![n_clusters_3](assets/kmens_cl_3.png)
 ![n_clusters_2](assets/kmens_cl_3_silhou.png)
 
 #### Clustering 2 Features: (a2_x_mean and a2_x_amp_max)
