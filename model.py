@@ -12,6 +12,11 @@ from itertools import combinations
 # Read DF
 df_bear = pd.read_csv('bearing_final_data.csv', index_col=0)
 
+# Feature Normalization
+min_max_scaler = preprocessing.MinMaxScaler()
+df_bear = min_max_scaler.fit_transform(df_bear)
+df_bear = pd.DataFrame(df_bear)
+
 # Function to iterate through all possible combinations between 2 features
 def iter_feature(arr, r):
     return list(combinations(arr, r))
