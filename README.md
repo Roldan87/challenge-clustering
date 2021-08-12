@@ -51,37 +51,22 @@ Also from the thickness of the silhouette plot the cluster size can be visualize
 
 
 #### Clustering 2 Features: (a2_x_mean & a1_x_amp_max)
-#### Max Score = 0.84
+#### Max Score = 0.64
 The highest silhouette score for 2 clusters, yet the outliers influence this score.
 From 3 clusters on, the score drops drastically.
 
 | Features and Clusters   | Scores                                               |
 |-------------------------|------------------------------------------------------|
 | a2_x_mean and a1_x_amp_max |  silhouette_avg                                      |
-| For n_clusters = 2      | The average silhouette_score is : 0.8391173340407827 |
-| For n_clusters = 3      | The average silhouette_score is : 0.5896726770101689 |
-| For n_clusters = 4      | The average silhouette_score is : 0.5876122410530076 |
-| For n_clusters = 5      | The average silhouette_score is : 0.576145435502854 |
-| For n_clusters = 6      | The average silhouette_score is : 0.41661611434422896 |
-| For n_clusters = 7      | The average silhouette_score is : 0.4488787240769407 |
+| For n_clusters = 2      | The average silhouette_score is : 0.6300868277980403 |
+| For n_clusters = 3      | The average silhouette_score is : 0.6437173078196544 |
+| For n_clusters = 4      | The average silhouette_score is : 0.5939285786276813 |
+| For n_clusters = 5      | The average silhouette_score is : 0.601409064582976 |
+| For n_clusters = 6      | The average silhouette_score is : 0.5861415589173682 |
+| For n_clusters = 7      | The average silhouette_score is : 0.4519906387081733 |
 
 ![n_clusters_3](assets/kmens_cl_2.png)
 ![n_clusters_3](assets/kmens_cl_3.png)
-
-
-#### Clustering 2 Features: (a2_x_mean and a2_x_amp_max)
-#### Max Score = 0.72
-This 2 features show the 2nd highest score and best avg score as the cluster number increases.
-
-| Features and Clusters   | Scores                                               |
-|-------------------------|------------------------------------------------------|
-| a2_x_mean and a2_x_amp_max |  silhouette_avg                                      |
-| For n_clusters = 2      | The average silhouette_score is : 0.7193140808576391 |
-| For n_clusters = 3      | The average silhouette_score is : 0.6971062066523174 |
-| For n_clusters = 4      | The average silhouette_score is : 0.6074239715611994 |
-| For n_clusters = 5      | The average silhouette_score is : 0.4776556949633035 |
-| For n_clusters = 6      | The average silhouette_score is : 0.47652959722799404 |
-| For n_clusters = 7      | The average silhouette_score is : 0.48445280262214047 |
 
 ![n_clusters_2](assets/feat_2_clust_2.png)
 ![n_clusters_3](assets/feat_2_clust_3.png)
@@ -155,16 +140,16 @@ The silhouette score differs from 2 features (red line) compared to 3/4/5 or 6 f
 ## Model Comparison
 
 ### Agglomerative Clustering Model: 
-#### Max Score = 0.88
-This score for n_clusters = 2 is influenced by the one outlier. For 3 to 7 clusters the score as well as the clustering is similar to the KMeans model.
-#### Features: a2_x_mean and a2_x_amp_max
+#### Max Score = 0.64
 
-For n_clusters = 2 The average silhouette_score is : 0.8817317199450385<br/>
-For n_clusters = 3 The average silhouette_score is : 0.637286509478433<br/>
-For n_clusters = 4 The average silhouette_score is : 0.5964118984493065<br/>
-For n_clusters = 5 The average silhouette_score is : 0.3881427768321534<br/>
-For n_clusters = 6 The average silhouette_score is : 0.38698240565343117<br/>
-For n_clusters = 7 The average silhouette_score is : 0.42267524009350654
+#### Features: a2_x_mean and a1_x_amp_max
+
+For n_clusters = 2 The average silhouette_score is : 0.6261942631298101<br/>
+For n_clusters = 3 The average silhouette_score is : 0.6457397862146368<br/>
+For n_clusters = 4 The average silhouette_score is : 0.5807329894489031<br/>
+For n_clusters = 5 The average silhouette_score is : 0.5858890560443617<br/>
+For n_clusters = 6 The average silhouette_score is : 0.5684539894734152<br/>
+For n_clusters = 7 The average silhouette_score is : 0.578559632028158
 
 ![agglomerative_cluster_2](assets/agglo_feat_2.png)
 ![agglomerative_cluster_3](assets/agglo_feat_3.png)
@@ -174,20 +159,20 @@ For n_clusters = 7 The average silhouette_score is : 0.42267524009350654
 #### Max Score = 0.50
 #### Features: a2_x_mean and a2_x_amp_max
 
-For n_clusters = 2 The average silhouette_score is : 0.5023390400726975<br/>
+For n_clusters = 7 The average silhouette_score is : 0.49510560787914276<br/>
 
 ![mean_shift_clust](assets/mean_shift.png)
 
 ### Spactral Clustering Model
-#### Max Score = 0.11
-#### Features: a2_x_mean and a2_x_amp_max
+#### Max Score = 0.63
+#### Features: a2_x_mean and a1_x_amp_max
 
-For n_clusters = 2 The average silhouette_score is : 0.11083940200971502<br/>
-For n_clusters = 3 The average silhouette_score is : 0.05755723390032442<br/>
-For n_clusters = 4 The average silhouette_score is : -0.1506008603176886<br/>
-For n_clusters = 5 The average silhouette_score is : -0.03327685423983772<br/>
-For n_clusters = 6 The average silhouette_score is : -0.16893632557173605<br/>
-For n_clusters = 7 The average silhouette_score is : -0.4212891907366274
+For n_clusters = 2 The average silhouette_score is : 0.6300868277980403<br/>
+For n_clusters = 3 The average silhouette_score is : 0.5912916685121626<br/>
+For n_clusters = 4 The average silhouette_score is : 0.5455073852729404<br/>
+For n_clusters = 5 The average silhouette_score is : 0.5081519232767612<br/>
+For n_clusters = 6 The average silhouette_score is : 0.3265517616076169<br/>
+For n_clusters = 7 The average silhouette_score is : 0.23977515877921424
 
 ![spactral_cluster_2](assets/spactral_2.png)
 ![spactral_cluster_3](assets/spactral_3.png)
@@ -211,9 +196,9 @@ For n_clusters = 7 The average silhouette_score is : -0.4212891907366274
 
 ##### Other Clustering models tried:
 
-* *Agglomerative Clustering*      --> max Score = 0.88
+* *Agglomerative Clustering*      --> max Score = 0.64
 * *MeanShift*                     --> max Score = 0.50
-* *Spactral Clustering*           --> max Score = 0.11
+* *Spactral Clustering*           --> max Score = 0.63
 
 ##### Final Word:
 The objective of gruping or clustering bearings by similar kinds of faults was not an easy task; the results show that none of the models used was able to differentiate such groups efficiently enough for us to see obvious separation in the faulty bearings.<br/>
