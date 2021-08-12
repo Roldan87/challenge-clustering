@@ -33,7 +33,7 @@ def scores_and_plots(cluster_model, model_name, df, feat_one, feat_two):
     print("For n_clusters =", n_clusters,
           "The average silhouette_score is :", silhouette_avg)
     # Compute the silhouette scores for each sample
-    sample_silhouette_values = silhouette_samples(X, cluster_labels)
+    sample_silhouette_values = silhouette_samples(df, cluster_labels)
     y_lower = 10
     for i in range(n_clusters):
         # Aggregate the silhouette scores for samples belonging to
